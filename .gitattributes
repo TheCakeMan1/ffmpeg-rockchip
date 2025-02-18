@@ -1,2 +1,6 @@
 *.pnm -diff -text
+*.cpp linguist-language=C++
+*.c linguist-language=C
+*.h linguist-language=C
+*.cmake linguist-language=CMake
 tests/ref/fate/sub-scc eol=crlf
