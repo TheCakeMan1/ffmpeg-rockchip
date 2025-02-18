@@ -1,5 +1,26 @@
 ffmpeg-rockchip
 =============
+Build
+* Clone
+* Create a build and installation folder
+```
+mkdir build && mkdir install && cd build
+```
+* Configure
+Change the prefix to your installation folder or leave also ../install.
+```
+sudo ../configure --prefix=../install --enable-gpl --enable-shared --enable-vaapi --enable-version3 --enable-libdrm --enable-rkmpp --enable-rkrga --enable-libx265 --enable-n
+onfree --extra-cflags="-I/usr/include/X11" --extra-ldflags="-L/usr/lib/x86_64-linux-gnu"
+```
+* Make
+```
+make
+```
+* Install
+```
+make install
+```
+=============
 This project aims to provide full hardware transcoding pipeline in FFmpeg CLI for Rockchip platforms that support MPP ([Media Process Platform](https://github.com/rockchip-linux/mpp)) and RGA ([2D Raster Graphic Acceleration](https://github.com/airockchip/librga)). This includes hardware decoders, encoders and filters. A typical target platform is RK3588/3588s based devices.
 
 ## Hightlights
