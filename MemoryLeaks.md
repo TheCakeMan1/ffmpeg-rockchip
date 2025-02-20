@@ -1,0 +1,2 @@
+- [x] avutils->frame.c->void av_frame_free(AVFrame **frame);
+- [ ] avcodec->get_buffer.c->static int video_get_buffer(AVCodecContext *s, AVFrame *pic);
