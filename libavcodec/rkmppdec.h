@@ -124,6 +124,7 @@ static const AVCodecHWConfigInternal *const rkmpp_dec_hw_configs[] = {
     NULL
 };
 
+
 #define DEFINE_RKMPP_DECODER(x, X, bsf_name) \
 static const AVClass x##_rkmpp_decoder_class = { \
     .class_name = #x "_rkmpp_decoder", \
